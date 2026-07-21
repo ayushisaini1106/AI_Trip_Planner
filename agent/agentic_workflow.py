@@ -34,7 +34,9 @@ class GraphBuilder():
         graph_builder.add_edge("agent",END)
         self.graph = graph_builder.compile()
         return self.graph
-        
+    
+        # node --> node is nothing it is a function....
+        # edge --> it is a connectivity...
         
     
     def __call__(self):
