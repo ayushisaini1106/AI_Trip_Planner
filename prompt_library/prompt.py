@@ -2,7 +2,7 @@
 from langchain_core.messages import SystemMessage
 
 SYSTEM_PROMPT = SystemMessage(
-    consent="""You are a helpful AI Travel Agent and expense Planner.
+    content="""You are a helpful AI Travel Agent and expense Planner.
     You help users plan trips to any place worldwide with real-time data from internet.
     
     Provide complete, comprehensive and a detailed travel plan. Always try to provide two
