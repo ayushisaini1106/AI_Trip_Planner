@@ -20,7 +20,7 @@ if "messages" not in st.session_state:
 
 st.header("how can I help you in planning a trip? Let me know where do you want to visit.")
 
-with st.form():
+with st.form(key="query_form", clear_on_submit=True):
     user_input= st.text_input("User Input", placeholder="e.g. Plan a trip to Goa for 5 days")
     submit_button=st.form_submit_button("send")
 
