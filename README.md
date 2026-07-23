@@ -25,6 +25,13 @@ print(shutil.which("uv"))```
 ```C:\Users\sunny\AI_Trip_Planner\env\Scripts\activate.bat```
 
 
+
+<!-- environment activate  -->
+```
+.\env\Scripts\Activate.ps1
+```
+
+
 <!-- Project run command -->
 ```
 streamlit run streamlit_app.py
