@@ -1,11 +1,11 @@
 import streamlit as st
 import requests
 import datetime
-
-# from exception.exceptions import TradingBotException
+import os
 import sys
 
-BASE_URL = "https://aitripplanner-production-50c6.up.railway.app"  # Backend endpoint
+# Backend endpoint (defaults to local server on port 8000)
+BASE_URL = os.getenv("BACKEND_URL", "http://localhost:8000")
 
 st.set_page_config(
     page_title="🌍 Travel Planner Agentic Application",
@@ -56,6 +56,5 @@ if submit_button and user_input.strip():
             st.error(" Bot failed to respond: " + response.text)
 
 
-    
     except Exception as e:
-        raise Exception(f"The response failed due to: {e}")
+        st.error(f"Failed to connect to the server. Please try again later. Error: {str(e)}")
