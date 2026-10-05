@@ -13,5 +13,7 @@ langchain-groq
 langchain-openai
 langgraph
 langchain-google-community[places]
+PyYAML
+langchain-tavily
 
 -e .
